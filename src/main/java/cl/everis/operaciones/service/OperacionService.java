@@ -74,6 +74,9 @@ public class OperacionService {
 			Double num3, 
 			Double num4,
 			Double num5) {
+
+		if(num1 == null || num2 == null || num3 == null || num4 == null || num5 == null )
+			throw new RuntimeException("Debe ingresar números válidos");
 		
 		Double[] numeros = {num1,num2,num3,num4,num5};
 		
